@@ -1,0 +1,17 @@
+EventEase project file verification
+
+[OK] index.html
+[OK] README.md
+[OK] assets/css/style.css
+[OK] assets/css/extra-pages.css
+[OK] assets/js/app.js
+[OK] assets/js/extra-pages.js
+
+Dark Mode and Light Mode:
+[OK] Theme toggle on main dashboard
+[OK] Theme toggle on Calendar page
+[OK] Theme toggle on Notifications page
+[OK] Theme preference saved in Local Storage (eventEaseTheme)
+[OK] assets/images/eventease-logo.svg
+
+Calendar and Notifications are integrated as sections inside index.html; no separate HTML pages are required.
