@@ -1,6 +1,6 @@
 # EventEase – Event Management System
 
-**Live website:** https://USERNAME.github.io/REPO/
+**Live website:** (https://fit-haiqal.github.io/eventease/
 **Repository:** https://github.com/fit-haiqal/eventease.git
 
 IMS566 Advanced Web Design Development and Content Management · Individual Project
