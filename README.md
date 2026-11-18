@@ -1,7 +1,7 @@
 # EventEase – Event Management System
 
 **Live website:** https://USERNAME.github.io/REPO/
-**Repository:** https://github.com/USERNAME/REPO
+**Repository:** https://github.com/fit-haiqal/eventease.git
 
 IMS566 Advanced Web Design Development and Content Management · Individual Project
 Muhammad Fitri Haiqal bin Jasam · UiTM
