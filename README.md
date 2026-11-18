@@ -1,77 +1,102 @@
 # EventEase – Event Management System
 
-A responsive front-end event management prototype developed for IMS566.
+**Live website:** https://USERNAME.github.io/REPO/
+**Repository:** https://github.com/USERNAME/REPO
 
-## Features
-- Demo administrator login
-- Dashboard summary and registration chart
-- Event management: add, edit, delete, search and filter
-- Participant management: add, edit, delete, search and filter
-- Registration management and status updates
-- Analytics charts and CSV export
-- Responsive sidebar navigation
-- Separate Calendar page with monthly event view
-- Separate Notifications page with unread counts, mark-as-read and delete controls
-- Automatic sample data when the browser has no saved EventEase data
-- Local Storage persistence in the current browser
+IMS566 Advanced Web Design Development and Content Management · Individual Project
+Muhammad Fitri Haiqal bin Jasam · UiTM
 
-## Demo Login
-- Username: `admin`
-- Password: `event123`
+---
 
-## Technologies
-- HTML5, CSS3 and JavaScript
-- Bootstrap 5.3.3
-- Bootstrap Icons
-- Chart.js 4.4.3
-- Browser Local Storage
+## 1. Project title & description
 
-## Run in Visual Studio Code
-1. Extract the ZIP file.
-2. Open the extracted `EventEase-Submission-Ready` folder in Visual Studio Code.
-3. Install or enable the **Live Server** extension.
-4. Right-click `index.html` and select **Open with Live Server**.
-5. Sign in with the demo credentials above.
+**EventEase – Event Management System**
 
-You can also open `index.html` directly in Google Chrome. Live Server is recommended for testing.
+EventEase is a responsive front-end prototype of an event management system. An administrator can
+manage events, participants and registrations in one place, follow registration activity through a
+dashboard and analytics charts, view events on a monthly calendar and keep track of notifications.
 
-## Important Notes
-- The application is a front-end academic prototype. Login is simulated and is not production authentication.
-- Sample records are built into the application and appear even when the browser has no previous EventEase Local Storage data.
-- Changes made in the application are saved in the browser's Local Storage. They are not shared between different computers or browsers.
-- An internet connection is required to load the CDN-hosted Bootstrap, Bootstrap Icons and Chart.js libraries.
+This is an academic front-end prototype. Login is simulated, and data is stored in the browser's
+Local Storage instead of a database.
 
+## 2. Features included
 
-## New Separate Pages
-- Both pages use `assets/js/extra-pages.js` and the shared assets folder. Open them from the links in the dashboard sidebar.
+**Authentication**
+- Demo administrator login (simulated, hardcoded credentials)
 
-## Appearance
-Use the moon/sun button in the top bar (or the standalone page header) to switch between Light Mode and Dark Mode. The selected theme is saved in browser Local Storage as `eventEaseTheme` and is shared by the dashboard, Calendar, and Notifications pages.
+**Navigation & layout**
+- Responsive sidebar navigation with a hamburger menu on smaller screens
+- Same sidebar, top navigation and layout on the Dashboard, Calendar and Notifications pages, with the active page highlighted
+- Light and Dark Mode toggle (moon/sun button), remembered across pages
+- Custom EventEase logo and browser tab icon (favicon)
 
-## Project File Checklist
-- `index.html` – main app and login
-- `assets/css/style.css` – main application styles
-- `assets/css/extra-pages.css` – Calendar/Notifications styles
-- `assets/js/app.js` – main application logic
-- `assets/js/extra-pages.js` – Calendar/Notifications logic
-- `README.md` – setup and project notes
+**Dashboard**
+- Summary of key information
+- Registration chart
 
-Open the extracted project folder in VS Code and run `index.html` with Live Server. The standalone pages are linked from the main sidebar. Bootstrap assets use CDN links and require an internet connection.
+**Data management pages**
+- **Events:** add, edit, delete, search and filter
+- **Participants:** add, edit, delete, search and filter
+- **Registrations:** manage registrations and update their status
 
-## Custom Logo
-- `assets/images/eventease-logo.svg` – EventEase calendar image logo used in the login screen, sidebar, Calendar and Notifications pages.
+**Data visualisation**
+- Analytics charts built with Chart.js
+- Export data to CSV
 
+**Extra pages**
+- **Calendar:** monthly view of events
+- **Notifications:** unread counts, mark as read and delete
 
-## Browser Tab Icon (Favicon)
-The EventEase purple calendar icon is configured for the Dashboard, Calendar and Notifications browser tabs using `assets/images/favicon.ico` and `assets/images/favicon.png`.
+**Data storage**
+- Sample data loads automatically when the browser has no saved EventEase data
+- Changes are saved in the browser's Local Storage
 
-## Consistent Page Layout
-Calendar and Notifications now use the same EventEase sidebar, top navigation, typography, theme toggle and responsive app shell as the Dashboard. Their active sidebar item is highlighted, and the hamburger menu works on smaller screens.
+## 3. Instructions to test login
 
-## Cross-page navigation
-The Analytics and Settings items in the Calendar and Notifications sidebars now link to the matching sections in `index.html`. URL hash handling opens the requested section when the main app loads.
+1. Open the live website link above in **Google Chrome**.
+2. Sign in with the demo administrator account:
 
-## Sidebar navigation across all pages
-From Calendar and Notifications, every sidebar item now opens its matching section in the main EventEase app: Dashboard, Event Management, Participants, Registrations, Analytics and Settings. Calendar and Notifications link directly to each other.
+| Role | Username | Password |
+|---|---|---|
+| Administrator | `admin` | `event123` |
 
-Calendar and Notifications are integrated as sections inside index.html; no separate HTML pages are required.
+3. After logging in, the Dashboard opens. Use the sidebar to visit Events, Participants, Registrations, Analytics, Calendar and Notifications.
+
+**Notes**
+- Login is simulated for demonstration only and is not secure production authentication.
+- Changes are saved in this browser's Local Storage. They are not shared between different computers or browsers.
+- Built-in sample records appear the first time the app is opened.
+
+## 4. Frameworks / libraries used
+
+| Framework / library | Version | Used for |
+|---|---|---|
+| [Bootstrap](https://getbootstrap.com) | 5.3.3 | Responsive layout and UI components |
+| [Bootstrap Icons](https://icons.getbootstrap.com) | – | Icons |
+| [Chart.js](https://www.chartjs.org) | 4.4.3 | Dashboard and analytics charts |
+| Browser Local Storage | – | Saving data and the selected theme |
+
+Written with **HTML5, CSS3 and JavaScript**. Bootstrap, Bootstrap Icons and Chart.js are loaded from
+a CDN, so an internet connection is needed.
+
+---
+
+## Running locally
+
+1. Open the project folder in Visual Studio Code.
+2. Install or enable the **Live Server** extension.
+3. Right-click `index.html` and select **Open with Live Server**.
+4. Sign in with the demo login above.
+
+## Project structure
+
+```
+index.html                    Main app and login
+assets/css/style.css          Main application styles
+assets/css/extra-pages.css    Calendar and Notifications styles
+assets/js/app.js              Main application logic
+assets/js/extra-pages.js      Calendar and Notifications logic
+assets/images/                EventEase logo and favicon
+README.md                     Project documentation
+```
+
